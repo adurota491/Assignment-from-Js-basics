@@ -1,0 +1,23 @@
+
+  const actions = ["start", "stop", "pause"];
+  let userAction = "start";
+  let isLoggedIn= true;
+  switch(true) {
+    case actions.includes(userAction) && isLoggedIn:
+      // TH userAction(start) is holding the element of the start and the isLoggedIn is holdign the element of the start therefore this means the case (which is the first case) tries to evaluate if the value of the isLogged can be compared with this switch statement if the userAction is permitted
+    console.log("Action permitted:" + userAction)
+    // If so it would output the console log to be Action permitted + start
+    break;
+    // THe break ends the case and exits the switch block preventing further running
+    case actions.includes(userAction) && !isLoggedIn:
+      // Checks if the userAction is a permitted action but user is not Logged in, by inputing the console.log
+      console.log("Please Log in to perform this action");
+      // THis console log is the output it gives 
+      break;
+      // THe cbreak ends the case and exits the case block preventing further runnnins
+      default:
+        // the default performs the function of else
+        console.log("No valid case found.");
+        
+        
+      }
